@@ -57,8 +57,6 @@ const plugins = [
       strapi_medusa_user: process.env.STRAPI_USER,
       strapi_medusa_password: process.env.STRAPI_PASSWORD,
       strapi_url: process.env.STRAPI_URL,
-      strapi_port: process.env.STRAPI_PORT,
-      strapi_protocol: process.env.STRAPI_PROTOCOL
     }
   }
   // Uncomment to add Stripe support.
