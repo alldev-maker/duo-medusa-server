@@ -33,7 +33,7 @@ const ADMIN_CORS = process.env.ADMIN_CORS || "http://localhost:7000,http://local
 //   process.env.DATABASE_URL || "postgres://localhost/medusa-store";
 
 // Medusa uses Redis, so this needs configuration as well
-// const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
+const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
 // Stripe keys
 // const STRIPE_API_KEY = process.env.STRIPE_API_KEY || "";
@@ -74,6 +74,7 @@ module.exports = {
   projectConfig: {
     database_type: "postgres",
     database_url: DATABASE_URL,
+    redis_url: REDIS_URL,
     admin_cors: ADMIN_CORS,
     jwt_secret: process.env.JWT_SECRET,
     cookie_secret: process.env.COOKIE_SECRET,
